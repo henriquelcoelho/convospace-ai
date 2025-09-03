@@ -9,6 +9,10 @@ import AgentStudio from "./pages/AgentStudio";
 import ToolsGateway from "./pages/ToolsGateway";
 import RAGData from "./pages/RAGData";
 import Memory from "./pages/Memory";
+import Observability from "./pages/Observability";
+import Deploy from "./pages/Deploy";
+import Identity from "./pages/Identity";
+import Settings from "./pages/Settings";
 import NotFound from "./pages/NotFound";
 
 const queryClient = new QueryClient();
@@ -26,6 +30,10 @@ const App = () => (
           <Route path="/tools" element={<ToolsGateway />} />
           <Route path="/rag" element={<RAGData />} />
           <Route path="/memory" element={<Memory />} />
+          <Route path="/observability" element={<Observability />} />
+          <Route path="/deploy" element={<Deploy />} />
+          <Route path="/identity" element={<Identity />} />
+          <Route path="/settings" element={<Settings />} />
           {/* ADD ALL CUSTOM ROUTES ABOVE THE CATCH-ALL "*" ROUTE */}
           <Route path="*" element={<NotFound />} />
         </Routes>
